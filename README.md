@@ -94,22 +94,22 @@ o servidor mediador analisa as comprovações e indica quem tem direito à devol
 |--------|-----------|-----------|------------|
 | RNF01 | Usabilidade | Funcionar em celular e computador | Testar em telas de 360 px a 1920 px |
 | RNF02 | Desempenho | Busca responde rápido | Resultado em até 2 segundos |
-| RNF03 | Segurança | <...> | <...> |
-| RNF04 | Privacidade (LGPD) | Não exibir dados pessoais de terceiros | <...> |
-| RNF05 | Acessibilidade | <...> | <...> |
-| RNF06 | Disponibilidade | <...> | <...> |
+| RNF03 | Segurança | Senhas armazenadas com hash e acesso somente via HTTPS | Nenhuma senha em texto puro no banco; o site não abre via HTTP |
+| RNF04 | Privacidade (LGPD) | Não exibir dados pessoais de terceiros | Nenhuma tela pública mostra nome, telefone ou e-mail de outros usuários |
+| RNF05 | Acessibilidade | Contraste adequado e navegação por teclado  | Contraste mínimo de 4,5:1 (WCAG AA) e todas as telas utilizáveis só com o teclado|
+| RNF06 | Disponibilidade | Sistema disponível durante o uso normal | Disponibilidade mínima de 95% ao mês |
 ## 6. Regras de negócio
 - **RN01:** Documentos oficiais (RG, CNH, cartão) não têm foto publicada;
 aparecem só como "documento encontrado".
 - **RN02:** Objetos não retirados em <N> dias são <doados / descartados>.
 - **RN03:** A retirada exige <documento com foto / confirmação de detalhes>.
-- **RN04:** <...>
+- **RN04:** Um objeto só recebe baixa após reivindicação aprovada e confirmação do administrador.
 ## 7. Histórias de usuário
 - Como **estudante**, quero **buscar meu casaco pela cor e pelo local**,
 para **saber se alguém o encontrou sem ir a todas as portarias**.
-- Como **vigilante da portaria**, quero **<...>**, para **<...>**.
-- Como **<ator>**, quero **<ação>**, para **<benefício>**.
+- Como **vigilante da portaria**, quero registrar o recebimento dos objetos deixados comigo**, para **saber o que está sob minha responsabilidade e evitar extravios**.
+- Como **administrador**, quero **confirmar a entrega e dar baixa no sistema**, para **que objetos já devolvidos não apareçam mais na busca**.
 ## 8. Dúvidas em aberto
 - [ ] Quem pode acessar: só a comunidade UFRPE ou o público em geral?
 - [ ] Os objetos ficam guardados em um só lugar ou em vários pontos?
-- [ ] <...>
+- [ ] Como comprovar a propriedade de objetos sem características únicas (por exemplo, uma garrafa comum)?
